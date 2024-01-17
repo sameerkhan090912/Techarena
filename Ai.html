@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            height: 100vh;
+            margin-top: 0;
+        }
+
+        section:nth-child(1) {
+            background: url('Ai.jpg') left top/cover fixed;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            animation: backgroundAnimation 5s infinite alternate;
+        }
+
+        section:nth-child(2) {
+            background: url('Ai2.jpg') left bottom/cover fixed;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            animation: backgroundAnimation 6s infinite alternate;
+        }
+
+        section:nth-child(3) {
+            background: url('Ai3.jpg') right top/cover fixed;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            animation: backgroundAnimation 7s infinite alternate;
+        }
+
+        section:nth-child(4) {
+            background: url('Ai4.jpg') right bottom/cover fixed;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            animation: backgroundAnimation 8s infinite alternate;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            section {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <img src="Ai.jpg" alt="AI Image 1">
+    </section>
+
+    <section>
+        <img src="Ai2.jpg" alt="AI Image 2">
+    </section>
+
+    <section>
+        <img src="Ai3.jpg" alt="AI Image 3">
+    </section>
+
+    <section>
+        <img src="Ai4.jpg" alt="AI Image 4">
+    </section>
+
+</body>
+
+</html>
