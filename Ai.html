@@ -12,6 +12,20 @@
             padding: 0;
         }
 
+        body:before {
+            content: "W\nE\nB\nM\nA\nS\nT\nE\nR\nO";
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 24px; /* Adjust font size as needed */
+            font-weight: bold; /* Make it bold */
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adjust shadow properties as needed */
+            line-height: 1.5; /* Adjust line height for better spacing */
+            writing-mode: vertical-rl; /* Set writing mode to vertical right-to-left */
+            z-index: 999; /* To ensure it stays on top */
+        }
+
         section {
             display: flex;
             flex-direction: column;
